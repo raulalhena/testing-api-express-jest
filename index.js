@@ -1,3 +1,3 @@
-import app from "./src/app.js";
+import { server } from "./src/app.js";
 
-app.listen
+server.listen

@@ -18,6 +18,6 @@ app.use('/users', userRouter);
 // END POINT: posts
 app.use('/posts', postRouter);
 
-export default app.listen(PORT | 3000, () => {
+export const server = app.listen(PORT | 3000, () => {
   console.log(`Server listening on port ${PORT}`);
 }); 
