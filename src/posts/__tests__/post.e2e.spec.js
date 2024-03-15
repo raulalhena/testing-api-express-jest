@@ -9,7 +9,27 @@ describe('Post', () => {
   
   describe('get all posts', () => {
     it('Should return 200', async () => {
-      await supertest(server).get('/posts').expect(200);
+      const response = await supertest(server).get('/posts');
+      expect(response.status).toBe(200);
+      expect(response.body).toEqual({
+        "posts": [
+          {
+            "id": 1,
+            "title": "Title1",
+            "content": "Post 1"
+          },
+          {
+            "id": 2,
+            "title": "Title2",
+            "content": "Post 2"
+          },
+          {
+            "id": 3,
+            "title": "Title3",
+            "content": "Post 3"
+          }
+        ]
+        })
     });
   });
 
