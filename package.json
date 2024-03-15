@@ -1,16 +1,23 @@
 {
-  "name": "api_express",
+  "name": "test_api_express",
   "version": "1.0.0",
-  "description": "Artículo de Medium mostrando como crear una API con la librería Express",
+  "description": "Artículo de Medium enseñando como realizar el testing de una API creada con Express usando Jest.",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest": {
+    "transform": {}
+  },
   "dependencies": {
     "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

@@ -42,5 +42,6 @@ export const userService = {
   findAll,
   findOneById,
   create,
-  addPostToUser
+  addPostToUser,
+  findUserPosts
 }
